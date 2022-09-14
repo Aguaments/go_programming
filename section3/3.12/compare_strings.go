@@ -6,6 +6,7 @@ import(
 
 func compare_string(s1, s2 string) bool{
 		flag := 0
+	
     if len(s1) != len(s2){
         return false
     }else{
