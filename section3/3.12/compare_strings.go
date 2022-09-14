@@ -17,14 +17,13 @@ func compare_string(s1, s2 string) bool{
                 }else{
                     flag = 1
                 }
-           }
-           if flag == 1{
-           		return false
+           	}
+           	if flag == 1{
+           			return false
            }
         }
         return true
    }
-
 }
 
 func main(){
