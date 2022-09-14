@@ -9,7 +9,7 @@ func compare_string(s1, s2 string) bool{
     if len(s1) != len(s2){
         return false
     }else{
-        for _, c1 := range s1 {
+        for _, c1 := range s1 {	
 						for _, c2 := range s2 {
             		if c1 == c2{
                     flag = 0
@@ -17,9 +17,9 @@ func compare_string(s1, s2 string) bool{
                 }else{
                     flag = 1
                 }
-           	}
-           	if flag == 1{
-           			return false
+           	 }
+           	 if flag == 1{
+           	   return false
            }
         }
         return true
