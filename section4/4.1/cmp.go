@@ -11,13 +11,10 @@ func statistic_diff_pos(mes1, mes2 string) int{
   
     count := 0
     for i := 0; i < 32; i ++{
-        c := c1[i] ^ c2[i]
-        for j := 0; j < 8;; j ++{
+        for c := c1[i] ^ c2[i]; c != 0; c = c >> 1{
             if c & 1 == 0{
-                c = c >> 1
                 continue
             }else{
-                c = c >> 1
                 count ++
             }
         }
